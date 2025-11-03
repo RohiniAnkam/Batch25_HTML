@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form layout</title>
+    <style>
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e1a4a4;
+}
+table{
+     background-color: aqua;
+     padding: 20px;
+     border-collapse: collapse;
+     
+    }
+    td{
+        padding: 8px;
+    }
+.submit1{
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            
+        }
+        .submit1:hover
+        {
+            background-color: rgb(10, 190, 130);
+        }
+        .submit{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+ <form>
+        <table border="1">
+            <tr>
+                <td>
+<label for="Name">Name:</label>
+                </td>
+                <td>
+<input type="text" value="" name="Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+<label for="Email">E-mail:</label>
+                </td>
+                <td>
+ <input type="text" value="" name="Email" required >
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+ <label for="Message">Message:</label>
+                </td>
+               <td>
+ <textarea name="Message"required></textarea>
+               </td>
+               
+            </tr>
+            <tr>
+                <td colspan="2" class="submit">
+ <input type="Submit" class="submit1">
+                </td>
+               
+            </tr>
+
+        </table>
+    </form>
+    </div>
+   
+</body>
+</html>
